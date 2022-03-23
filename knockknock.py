@@ -29,7 +29,7 @@ from struct import *
 from knockknock.Profile import Profile
 
 def usage():
-    print "Usage: knockknock.py -p <portToOpen> <host>"
+    print("Usage: knockknock.py -p <portToOpen> <host>")
     sys.exit(2)
     
 def parseArguments(argv):
