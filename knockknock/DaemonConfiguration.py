@@ -29,7 +29,7 @@ class DaemonConfiguration:
             self.delay  = int(parser.get('main', 'delay'))
             self.window = int(parser.get('main', 'error_window'))
         except ConfigParser.NoSectionError:
-            print "knockknock-daemon: config file not found, assuming defaults."
+            print("knockknock-daemon: config file not found, assuming defaults.")
             self.delay  = 15
             self.window = 20
 

@@ -39,7 +39,7 @@ class CryptoEngine:
         localMac = self.calculateMac(port)
 
         if (localMac != remoteMac):
-            raise MacFailedException, "MAC Doesn't Match!"
+            raise MacFailedException("MAC Doesn't Match!")
 
     def encryptCounter(self, counter):
         counterBytes = pack('!IIII', 0, 0, 0, counter)
@@ -82,4 +82,4 @@ class CryptoEngine:
             except MacFailedException:
                 pass
 
-        raise MacFailedException, "Ciphertext failed to decrypt in range..."
+        raise MacFailedException("Ciphertext failed to decrypt in range...")

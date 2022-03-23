@@ -155,6 +155,6 @@ class Profile:
 
     def printHex(self, val):
         for c in val:
-            print "%#x" % ord(c),
+            print("%#x" % ord(c),)
             
-        print ""
+        print("")

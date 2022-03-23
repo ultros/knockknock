@@ -46,5 +46,5 @@ class KnockWatcher:
                     except MacFailedException:
                         pass
             except:
-#                print "Unexpected error:", sys.exc_info()
+#                print("Unexpected error:", sys.exc_info())
                 syslog.syslog("knocknock skipping unrecognized line.")
